@@ -1,6 +1,11 @@
 function mergeSortedArrays(array1, array2) {
   let newarray = [];
 let i=0, j=0;
+
+//check input
+if(array1.length===0) return array2;
+if(array2.length===0) return array1; 
+
   while (i< array1.length ,j<array2.length)
   {
     
